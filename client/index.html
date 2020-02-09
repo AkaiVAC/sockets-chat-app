@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sockets</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="ui-switch">
+				<label for="ui-mode">Dark mode</label>
+				<input type="checkbox" name="ui-mode" id="ui-mode" />
+			</div>
+			<h1>Socket chat</h1>
+			<div class="output">
+				<div class="typing"></div>
+			</div>
+			<input
+				type="text"
+				name="handle"
+				id="handle"
+				class="chat"
+				placeholder="Enter your handle..."
+				autocomplete="off"
+			/>
+			<input
+				type="text"
+				name="chat"
+				id="chat"
+				class="chat"
+				placeholder="Enter a message..."
+				autocomplete="off"
+			/>
+			<button class="sendMessage" type="button">Send ⬆</button>
+			<p class="errorMessage hide">Enter all values...</p>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>

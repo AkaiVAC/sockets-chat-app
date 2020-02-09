@@ -1,0 +1,19 @@
+{
+	"name": "sockets",
+	"version": "1.0.0",
+	"description": "Simple chat app",
+	"main": "./server/server.js",
+	"author": "Arun Chithambaram",
+	"license": "MIT",
+	"scripts": {
+		"dev:start": "nodemon -r dotenv/config ./server/server.js"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"socket.io": "^2.3.0"
+	},
+	"devDependencies": {
+		"dotenv": "^8.2.0",
+		"nodemon": "^2.0.2"
+	}
+}
